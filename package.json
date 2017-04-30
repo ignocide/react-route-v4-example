@@ -1,7 +1,7 @@
 {
-  "name": "blog",
+  "name": "mythingk",
   "version": "0.0.1",
-  "description": "maden ignocide's blog by self",
+  "description": "ignocide's blog by self",
   "main": "index.js",
   "scripts": {
     "dev": "webpack-dev-server --config ./server/webpack/webpack-dev.config.js --watch --colors --host 0.0.0.0",
@@ -24,6 +24,7 @@
   "dependencies": {
     "axios": "^0.16.1",
     "es6-promise": "^4.1.0",
+    "express": "^4.15.2",
     "prop-types": "^15.5.8",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
