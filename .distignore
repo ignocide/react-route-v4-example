@@ -1,0 +1,7 @@
+node_modules
+npm-debug.log
+dump.rbd
+docs
+.rebooted
+.tmp
+conf/config.json
