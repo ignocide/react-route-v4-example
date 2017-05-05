@@ -1,5 +1,8 @@
 import React, {Component} from 'react'
 import PropTypes from 'prop-types'
+import Header from '../Header'
+
+import './layout.scss'
 
 class Layout extends Component {
   constructor (props, context) {
@@ -16,8 +19,10 @@ class Layout extends Component {
   render () {
     return (
       <div>
-        <div className='header' />
-        <div className='body' >
+        <div className='header'>
+          <Header />
+        </div>
+        <div className='body container' >
           { this.props.children }
         </div>
         <div className='footer' />

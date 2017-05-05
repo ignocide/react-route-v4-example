@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom'
 import { BrowserRouter as Router, Route} from 'react-router-dom'
 
 import Bundle from './Bundle'
-import Layout from './components/Layout'
+import Layout from './components/Layout/'
 import App from 'bundle-loader?lazy!./components/App'
 
 import '../scss/bundle.scss'
