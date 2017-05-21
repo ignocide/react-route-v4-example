@@ -1,10 +1,11 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { BrowserRouter as Router, Route} from 'react-router-dom'
+import { BrowserRouter as Router, Route } from 'react-router-dom'
 
 import Bundle from './Bundle'
 import Layout from './components/Layout/'
-import App from 'bundle-loader?lazy!./components/App'
+import Main from 'bundle-loader?lazy!./components/Main/index'
+import AboutMe from 'bundle-loader?lazy!./components/AboutMe/index'
 
 import '../scss/bundle.scss'
 
@@ -18,11 +19,14 @@ class Blog extends React.Component {
   }
 
   render () {
-    return (<Router>
-      <Layout>
-        <Route path='/main' component={loader(App)} />
-      </Layout>
-    </Router>)
+    return (
+      <Router>
+        <Layout>
+          <Route path='/main' component={loader(Main)} />
+          <Route path='/aboutme' component={loader(AboutMe)} />
+        </Layout>
+      </Router>
+    )
   }
 }
 

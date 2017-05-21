@@ -1,10 +1,6 @@
-import React, {Component} from 'react'
+import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-import {
-  BrowserRouter as Router,
-  Route,
-  Link
-} from 'react-router-dom'
+import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
 
 import './header.scss'
 
@@ -13,19 +9,24 @@ class Header extends Component {
     super(props, context)
   }
 
-  componentWillMount () {
-  }
+  componentWillMount () {}
 
-  componentDidMount () {
-  }
+  componentDidMount () {}
 
   render () {
     return (
       <div className='container'>
-        <div className='blog_name'>IGNOCIDE'S BLOG</div>
-        <ul className='menu_list' >
-          <li><Link to='/main'>who am I?</Link></li>
-          <li>list-item</li>
+        <div className='blog_name'>
+          IGNOCIDE
+        </div>
+        <ul className='menu_list'>
+          <li>
+            <Link to='/main'> 소개
+            </Link>
+          </li>
+          <li>
+            글목록
+          </li>
         </ul>
       </div>
     )

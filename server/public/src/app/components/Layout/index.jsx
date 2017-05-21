@@ -1,6 +1,6 @@
-import React, {Component} from 'react'
-import PropTypes from 'prop-types'
+import React, { Component } from 'react'
 import Header from '../Header'
+import DIR from 'github-directory'
 
 import './layout.scss'
 
@@ -10,6 +10,10 @@ class Layout extends Component {
   }
 
   componentWillMount () {
+    window.dir = new DIR({
+      user: 'ignocide',
+      repository: 'blog-posts'
+    })
   }
 
   componentDidMount () {
@@ -18,12 +22,12 @@ class Layout extends Component {
 
   render () {
     return (
-      <div>
+      <div className='container root'>
         <div className='header'>
           <Header />
         </div>
-        <div className='body container' >
-          { this.props.children }
+        <div className='body'>
+          {this.props.children}
         </div>
         <div className='footer' />
       </div>

@@ -1,16 +1,21 @@
+.root{
+  background-color: #fff;
+  -webkit-box-shadow: 0 2px 6px rgba(100,100,100,0.3);
+  -moz-box-shadow: 0 2px 6px rgba(100,100,100,0.3);
+  box-shadow: 0 2px 6px rgba(100,100,100,0.3);
+}
+
 div.header {
-  position: fixed;
   height: 55px;
-  top:0;
-  width: 100%;
   border-bottom: 1px solid #d6d6d6;
-  background: #fff;
+  background-color: #5587C6;
   z-index: 100;
+  color: white;
 }
 
 div.body{
+  padding: 30px;
   border-left: 1px solid #d6d6d6;
   border-right: 1px solid #d6d6d6;
-  margin-top: 55px;
   min-height: 100vh;
 }
