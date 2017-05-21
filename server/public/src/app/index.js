@@ -1,10 +1,10 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { BrowserRouter as Router, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 
 import Bundle from './Bundle'
 import Layout from './components/Layout/'
-import Main from 'bundle-loader?lazy!./components/Main/index'
+// import Main from 'bundle-loader?lazy!./components/Main/index'
 import AboutMe from 'bundle-loader?lazy!./components/AboutMe/index'
 
 import '../scss/bundle.scss'
@@ -22,8 +22,10 @@ class Blog extends React.Component {
     return (
       <Router>
         <Layout>
-          <Route path='/main' component={loader(Main)} />
-          <Route path='/aboutme' component={loader(AboutMe)} />
+          <Switch>
+            <Route path='/aboutme' component={loader(AboutMe)} />
+            <Route component={loader(AboutMe)}/>
+          </Switch>
         </Layout>
       </Router>
     )
