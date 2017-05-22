@@ -1,10 +1,15 @@
 $color-grey : #d6d6d6;
 
 html {
-  background-color: white;
+  background-color: #EAEAEA;
 }
 
-a:link{
-  color: inherit;
+a:link, a:visited{
+  color: #31363B;
   text-decoration: none;
+}
+
+.right{
+  display: inline-block;
+  float: right;
 }

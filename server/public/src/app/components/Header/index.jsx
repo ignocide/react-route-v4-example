@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
-import PropTypes from 'prop-types'
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 
 import './header.scss'
 
@@ -16,16 +15,14 @@ class Header extends Component {
   render () {
     return (
       <div className='container'>
-        <div className='blog_name'>
-          IGNOCIDE
-        </div>
         <ul className='menu_list'>
           <li>
-            <Link to='/main'> 소개
+            <Link to='/list'> 글목록
             </Link>
           </li>
           <li>
-            글목록
+            <Link to='/main'> 소개
+            </Link>
           </li>
         </ul>
       </div>

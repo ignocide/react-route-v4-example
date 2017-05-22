@@ -4,7 +4,8 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 
 import Bundle from './Bundle'
 import Layout from './components/Layout/'
-// import Main from 'bundle-loader?lazy!./components/Main/index'
+import PostList from 'bundle-loader?lazy!./components/PostList/index'
+import Main from 'bundle-loader?lazy!./components/Main/index'
 import AboutMe from 'bundle-loader?lazy!./components/AboutMe/index'
 
 import '../scss/bundle.scss'
@@ -23,8 +24,10 @@ class Blog extends React.Component {
       <Router>
         <Layout>
           <Switch>
+            <Route path='/post/:title' component={loader(Main)} />
+            <Route path='/list' component={loader(PostList)} />
             <Route path='/aboutme' component={loader(AboutMe)} />
-            <Route component={loader(AboutMe)}/>
+            <Route component={loader(AboutMe)} />
           </Switch>
         </Layout>
       </Router>

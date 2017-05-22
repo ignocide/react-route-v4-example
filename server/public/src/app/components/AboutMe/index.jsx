@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Markdown from '../Markdown'
+import Markdown from '../Markdown/'
 const aboutme =
 `# 소개
 ___
@@ -22,7 +22,9 @@ React를 이용해 만들어 졌으며, github를 이용하고 지킬을 사용�
 
 ### 블로그 주제 ###
 ___
-소개에 적은 듯이 실무에 치이면서 미처 정리 하지못한 것들을 입니다. 무언가를 소개하고 공유하는 목적은 부가적으로 이루어질 듯 합니다.`
+소개에 적은 듯이 실무에 치이면서 미처 정리 하지못한 것들을 입니다. 무언가를 소개하고 공유하는 목적은 부가적으로 이루어질 듯 합니다.
+분야는 web 관련한 게시물이 주가 될듯합니다.
+`
 
 class App extends Component {
   constructor (props, context) {
