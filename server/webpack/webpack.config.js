@@ -26,7 +26,7 @@ module.exports = (options) => {
     module: {
       loaders: [
         {
-          test: /.jsx?$/,
+          test: [/.js?$/, /.jsx?$/],
           include: Path.join(__dirname, '../public/src/app'),
           loader: 'babel-loader'
         }

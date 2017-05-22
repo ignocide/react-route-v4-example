@@ -17,11 +17,11 @@ class App extends Component {
   render () {
     return (
       <div className=''>
-        <Post/>
-        <PostList/>
+        <Post />
+        <PostList />
       </div>
     )
-  }ㅑ
+  }
 }
 
 export default App

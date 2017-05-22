@@ -3,17 +3,9 @@ import axios from 'axios'
 import { withRouter } from 'react-router'
 import Markdown from '../Markdown/'
 
-import PropTypes from 'prop-types'
-
 import './post.scss'
 
 class List extends Component {
-  static propTypes = {
-    match: PropTypes.object.isRequired,
-    location: PropTypes.object.isRequired,
-    history: PropTypes.object.isRequired
-  }
-
   constructor (props, context) {
     super(props, context)
     this.state = {
@@ -41,7 +33,7 @@ class List extends Component {
   render () {
     return (
       <div className='post-wrapper'>
-        <Markdown markdown={this.state.content}></Markdown>
+        <Markdown markdown={this.state.content} />
       </div>
     )
   }
