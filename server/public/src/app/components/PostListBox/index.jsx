@@ -2,8 +2,6 @@ import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import { splitName } from '../../utils'
 
-import './postlistbox.scss'
-
 class List extends Component {
   constructor (props, context) {
     super(props, context)

@@ -1,9 +1,7 @@
 import React, { Component } from 'react'
 import axios from 'axios'
 import { withRouter } from 'react-router'
-import Markdown from '../Markdown/'
-
-import './post.scss'
+import Markdown from '../Markdown/index'
 
 class List extends Component {
   constructor (props, context) {

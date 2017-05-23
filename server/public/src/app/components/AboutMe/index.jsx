@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Markdown from '../Markdown/'
+import Markdown from '../Markdown/index'
 const aboutme =
 `# 소개
 ___

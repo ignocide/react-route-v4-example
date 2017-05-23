@@ -1,7 +1,4 @@
 import React, { Component } from 'react'
-import PropTypes from 'prop-types'
-
-import './list.scss'
 
 class List extends Component {
   constructor (props, context) {

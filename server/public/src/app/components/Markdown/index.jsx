@@ -1,8 +1,6 @@
 import React, { Component } from 'react'
 import marked from 'marked'
 
-import './markdown.scss'
-
 class App extends Component {
   constructor (props, context) {
     super(props, context)

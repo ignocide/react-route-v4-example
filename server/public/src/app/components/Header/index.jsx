@@ -21,7 +21,7 @@ class Header extends Component {
             </Link>
           </li>
           <li>
-            <Link to='/main'> 소개
+            <Link to='/aboutme'> 소개
             </Link>
           </li>
         </ul>

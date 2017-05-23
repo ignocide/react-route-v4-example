@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import Header from '../Header'
+import Header from '../Header/index'
 import DIR from 'github-directory'
 
 import './layout.scss'
