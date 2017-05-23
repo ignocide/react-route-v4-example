@@ -10,7 +10,7 @@ ___
  * email: ignocide@gmail.com  
  * 하는일 : node.js위주의 웹개발자  
  * 이전 블로그 : http://mythinkg.blogspot.kr/
-
+  
 ### 블로그 소개 ###
 ___
 ~~개발자라면 개발블로그 하나쯤은..~~  

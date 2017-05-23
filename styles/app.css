@@ -41,7 +41,8 @@ div.header {
   border-bottom: 1px solid #d6d6d6;
   background-color: #32363B;
   z-index: 100;
-  color: white; }
+  color: white;
+  padding: 0 30px; }
 
 div.body {
   padding: 30px;
@@ -82,7 +83,6 @@ div.body {
   max-width: 960px;
   margin-left: auto;
   margin-right: auto;
-  padding: 0 20px;
   box-sizing: border-box; }
 
 .column,
