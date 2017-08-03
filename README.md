@@ -1,7 +1,7 @@
 ### webpack 버전  
 webpack 2사용  
 
-###tasks  
+### tasks  
 
   - npm run dev  
     - 개발 모드, webpack-dev-server 사용(express 서버 아님)  
@@ -24,5 +24,5 @@ webpack 2사용
 
 #### 참고 사이트
 
-https://github.com/webpack-contrib/bundle-loader
+https://github.com/webpack-contrib/bundle-loader  
 https://reacttraining.com/react-router/web/guides/philosophy
