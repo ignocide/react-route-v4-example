@@ -11,8 +11,8 @@ class Layout extends Component {
 
   componentWillMount () {
     window.dir = new DIR({
-      user: 'ignocide',
-      repository: 'blog-posts'
+      user: ''/* github id */,
+      repository: ''/* repository */
     })
   }
 

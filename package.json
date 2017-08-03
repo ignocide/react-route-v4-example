@@ -1,7 +1,7 @@
 {
   "name": "mythingk",
   "version": "0.0.1",
-  "description": "ignocide's blog by self",
+  "description": "react-route-v4-example",
   "main": "index.js",
   "scripts": {
     "dev": "webpack-dev-server --config ./server/webpack/webpack-dev.config.js --watch --colors --host 0.0.0.0",
@@ -10,17 +10,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://ignocide@github.com/ignocide/blog.git"
   },
   "keywords": [
     "blog"
   ],
   "author": "ignocide",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/ignocide/blog/issues"
-  },
-  "homepage": "https://github.com/ignocide/blog#readme",
   "dependencies": {
     "axios": "^0.16.1",
     "es6-promise": "^4.1.0",

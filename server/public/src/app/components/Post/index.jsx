@@ -14,16 +14,6 @@ class List extends Component {
   componentWillMount () {
     var self = this
     var title = this.props.match.params.title
-    axios.get(`https://raw.githubusercontent.com/ignocide/blog-posts/master/${title}.md`)
-      .then(function (result) {
-        self.setState({
-          content: result.data
-        })
-        self.forceUpdate()
-      })
-      .catch(function (err) {
-        self.props.history.replace('/')
-      })
   }
 
   componentDidMount () {}
